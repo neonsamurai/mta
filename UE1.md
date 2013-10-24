@@ -180,7 +180,7 @@ Plot der Bitreduktion (8 Bit):
 
 Plot des Differenzsignals:
 
-![Plot der ber bitreduzierten Sprachdatei mit Differenzsignal](/docfiles/sprache_bitreduced-diff-8bit.wav)
+![Plot der ber bitreduzierten Sprachdatei mit Differenzsignal](/docfiles/sprache_bitred-diff-8bit.wav)
 
 Bitreduzierte Sprachdatei mit Differnezsignal: [sprache_bitreduced-diff-8bit.wav](/docfiles/sprache_bitreduced-diff-8bit.wav)
 
