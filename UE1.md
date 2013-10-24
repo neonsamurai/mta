@@ -13,6 +13,7 @@ outfile:
         channels            1
         Bitrate =           22050Hz * 16 bits * 1 Channel = 352 kbit/s
 
+
 infile: [musik2.wav](/docfiles/musik2.wav)
 outfile:
 
@@ -23,6 +24,15 @@ outfile:
         bytes per sample    4
         channels            2
         Bitrate =           44100 * 16 bits * 2 Channels = 1,411 Mbit/s
+
+Erklärung der Headerangaben
+---------------------------
+
+* filelength: Dateilänge. Entspricht samples * bytes per sample
+* samples: Anzahl der Abtastungen
+* rate: Abtastrate, Anzahl samples pro Sekunde
+* bits: Anzahl bits pro sample
+* channels: Anzahl der aufgezeichneten Kanäle
 
 Aufgabe 2.1
 ===========
