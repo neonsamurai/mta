@@ -195,4 +195,4 @@ Plot des Differenzsignals:
 
 ![Plot der bitreduzierten Musikdatei mit Differenzsignal](/docfiles/musik-bitred-9bit-diff.jpg)
 
-Bitreduzierte Musikdatei mit Differenzsignal: [musik_bitreduced-diff-9bit.wav](/docfiles/musik_bitreduced-9bit-diff.wav)
+Bitreduzierte Musikdatei mit Differenzsignal: [musik_bitreduced-diff-9bit.wav](/docfiles/musik_bitreduced-diff-9bit.wav)
