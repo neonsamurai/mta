@@ -182,7 +182,7 @@ Plot des Differenzsignals:
 
 ![Plot der ber bitreduzierten Sprachdatei mit Differenzsignal](/docfiles/sprache-bitred-8bit-diff.jpg)
 
-Bitreduzierte Sprachdatei mit Differnezsignal: [sprache_bitreduced-diff-8bit.wav](/docfiles/sprache-bitreduced-diff-8bit.wav)
+Bitreduzierte Sprachdatei mit Differnezsignal: [sprache_bitreduced-diff-8bit.wav](/docfiles/sprache_bitreduced-diff-8bit.wav)
 
 Musik
 -----
@@ -195,4 +195,4 @@ Plot des Differenzsignals:
 
 ![Plot der bitreduzierten Musikdatei mit Differenzsignal](/docfiles/musik-bitred-9bit-diff.jpg)
 
-Bitreduzierte Musikdatei mit Differenzsignal: [musik_bitreduced-diff-9bit.wav](/docfiles/musik_bitred-9bit-diff.wav)
+Bitreduzierte Musikdatei mit Differenzsignal: [musik_bitreduced-diff-9bit.wav](/docfiles/musik_bitreduced-9bit-diff.wav)
