@@ -13,9 +13,11 @@
 int main(int argc, char *argv[])
 {
 	int	out;
+	const int bit=9;
 
 	char in_name[MAX_STR_LNGTH], out_name[MAX_STR_LNGTH];
 	short *wave;
+	short *new_wave;
 
 	unsigned int freq_in, bits_in;
 	unsigned int n_wave;
@@ -71,11 +73,25 @@ int main(int argc, char *argv[])
 
 	// --------------3.2 bit reduction ----------------------
 
-	for (i =0; i < n_wave; i++){
+	/*for (i =0; i < n_wave; i++){
 		wave[i] /= 512;
 		wave[i] *= 512;
-	}
+	}*/
 	// -------------- 3.2 bit reduction end -----------------
+
+	// -------------- 3.4 difference signal ------------------
+
+	new_wave = (short*)malloc(n_wave*sizeof(short));
+
+	for(i=0; i<n_wave; i++){
+		new_wave[i] = wave[i];
+		wave[i] /= pow(2.0,bit);
+		wave[i] *= pow(2.0,bit);
+		wave[i] -= new_wave[i];
+		wave[i] *= pow(2.0, 16-bit-1);
+	}
+
+	// -------------- 3.4 difference signal end --------------
 
 	if (out)
 		write_wave(wave, n_wave, freq_in, bits_in, out_name, &header);

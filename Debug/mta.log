@@ -1,0 +1,46 @@
+﻿Build started 28.03.2013 08:16:30.
+     1>Project "C:\Users\Tim\Documents\Repositories\mta\mta.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\mta.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Programme\Microsoft Virtual Studio 2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt io_func.c wave_io.c
+         wave_io.c
+     1>wave_io.c(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Programme\Microsoft Virtual Studio 2010\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>wave_io.c(43): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Programme\Microsoft Virtual Studio 2010\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>wave_io.c(88): warning C4244: '/=' : conversion from 'double' to 'short', possible loss of data
+     1>wave_io.c(89): warning C4244: '*=' : conversion from 'double' to 'short', possible loss of data
+     1>wave_io.c(91): warning C4244: '*=' : conversion from 'double' to 'short', possible loss of data
+     1>wave_io.c(25): warning C4101: 'prt' : unreferenced local variable
+         io_func.c
+     1>io_func.c(23): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Programme\Microsoft Virtual Studio 2010\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>io_func.c(60): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Programme\Microsoft Virtual Studio 2010\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>io_func.c(116): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Programme\Microsoft Virtual Studio 2010\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\mta.exe.embed.manifest.res" Debug\mta_manifest.rc 
+       Link:
+         D:\Programme\Microsoft Virtual Studio 2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\mta.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.lib" /MACHINE:X86 Debug\mta.exe.embed.manifest.res
+         Debug\io_func.obj
+         Debug\wave_io.obj
+       Manifest:
+         Deleting file "Debug\mta.exe.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\mta.exe.embed.manifest" /manifest Debug\mta.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\mta.exe.embed.manifest.res" Debug\mta_manifest.rc 
+       LinkEmbedManifest:
+         D:\Programme\Microsoft Virtual Studio 2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\mta.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.lib" /MACHINE:X86 Debug\mta.exe.embed.manifest.res
+         Debug\io_func.obj
+         Debug\wave_io.obj
+         mta.vcxproj -> C:\Users\Tim\Documents\Repositories\mta\Debug\mta.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\mta.unsuccessfulbuild".
+         Touching "Debug\mta.lastbuildstate".
+     1>Done Building Project "C:\Users\Tim\Documents\Repositories\mta\mta.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.28
