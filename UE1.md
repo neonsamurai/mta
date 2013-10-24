@@ -2,7 +2,7 @@ Aufgabe 1.1
 ===========
 
 
-infile: [sprache.wav](../sprache.wav )
+infile: [sprache.wav](/docfiles/sprache.wav )
 outfile: 
 
         filelength          329550
@@ -13,7 +13,7 @@ outfile:
         channels            1
         Bitrate =           22050Hz * 16 bits * 1 Channel = 352 kbit/s
 
-infile: [musik2.wav](../musik2.wav)
+infile: [musik2.wav](/docfiles/musik2.wav)
 outfile:
 
         filelength          3323492
@@ -81,7 +81,7 @@ Grenzfall:
 
 ![Schema des Grenzfalls](/docfiles/nyquist-grenzfall.gif)
 
-_Quelle: http://public.beuth-hochschule.de/~mixdorff/mmt1/files/schwingungslehre.pdf
+Quelle: http://public.beuth-hochschule.de/~mixdorff/mmt1/files/schwingungslehre.pdf
 
 Aufgabe 2.3
 ===========
@@ -134,7 +134,7 @@ Aufgabe 3.3
 Sprache
 -------
 
-Bitreduzierte Sprachdatei: [sprache_bitreduced.wav](/docfiles/sprache_bitreduced.wav)
+Bitreduzierte Sprachdatei: [sprache_bitreduced.wav](/docfiles/sprace_bitreduced.wav)
 
 Merkliche Qualitätsverringerung tritt bei 8-bit Reduktion auf.
 Das Quantisierungsgeräusch äußert sich in abgehackter Sprache, wobei jeweils Anfang und Ende von Worten verloren gehen.
@@ -182,7 +182,7 @@ Plot des Differenzsignals:
 
 ![Plot der ber bitreduzierten Sprachdatei mit Differenzsignal](/docfiles/sprache-bitred-8bit-diff.jpg)
 
-Bitreduzierte Sprachdatei mit Differnezsignal: [sprache_bitreduced-diff-8bit.wav](/docfiles/sprache-bitred-diff-8bit.wav)
+Bitreduzierte Sprachdatei mit Differnezsignal: [sprache_bitreduced-diff-8bit.wav](/docfiles/sprache-bitreduced-diff-8bit.wav)
 
 Musik
 -----
@@ -195,4 +195,4 @@ Plot des Differenzsignals:
 
 ![Plot der bitreduzierten Musikdatei mit Differenzsignal](/docfiles/musik-bitred-9bit-diff.jpg)
 
-Bitreduzierte Musikdatei mit Differenzsignal: [musik_bitreduced-diff-9bit.wav](/docfiles/musik_bitreduced-diff-9bit.wav)
+Bitreduzierte Musikdatei mit Differenzsignal: [musik_bitreduced-diff-9bit.wav](/docfiles/musik_bitred-9bit-diff.wav)
