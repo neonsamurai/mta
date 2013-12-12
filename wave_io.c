@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 {
 	int	out;
 	const int bit=9;
+	const int db=6;
 
 	char in_name[MAX_STR_LNGTH], out_name[MAX_STR_LNGTH];
 	short *wave;
@@ -22,7 +23,9 @@ int main(int argc, char *argv[])
 	unsigned int freq_in, bits_in;
 	unsigned int n_wave;
 	unsigned int i;
-	FILE *prt; 
+	FILE *prt;
+
+	float a, f_wave;
 
 	struct Waveheader header;
 
@@ -80,19 +83,35 @@ int main(int argc, char *argv[])
 	// -------------- 3.2 bit reduction end -----------------
 
 	// -------------- 3.4 difference signal ------------------
-
+	/*
 	new_wave = (short*)malloc(n_wave*sizeof(short));
 
 	for(i=0; i<n_wave; i++){
-		new_wave[i] = wave[i];
-		wave[i] /= pow(2.0,bit);
-		wave[i] *= pow(2.0,bit);
-		wave[i] -= new_wave[i];
-		wave[i] *= pow(2.0, 16-bit-1);
+		new_wave[i] = wave[i];         // keep original
+		wave[i] /= pow(2.0,bit);       // quantify
+		wave[i] *= pow(2.0,bit);       // boost amplitude
+		wave[i] -= new_wave[i];        // error calculation
+		wave[i] *= pow(2.0, 16-bit-1); // boost error
+	}
+	*/
+	// -------------- 3.4 difference signal end --------------
+	
+	// -------------- Ü3 / 3.1 Klirrfaktor -------------------
+
+	a = pow(db/20,10);
+
+	for(i=0; i <n_wave; i++) {
+		f_wave *= a;
+		wave[i] = f_wave;
+		if(f_wave > 32767){
+			wave[i] = 32767;
+		}
+		if(f_wave < -32768){
+			wave[i] = -32768;
+		}
 	}
 
-	// -------------- 3.4 difference signal end --------------
-
+	// -------------- Ü3 / 3.1 Klirrfaktor end ---------------
 	if (out)
 		write_wave(wave, n_wave, freq_in, bits_in, out_name, &header);
 
