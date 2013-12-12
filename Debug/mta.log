@@ -1,29 +1,20 @@
-﻿Build started 12.12.2013 13:14:04.
+﻿Build started 12.12.2013 14:11:15.
      1>Project "C:\Users\Tim\Documents\Repositories\mta\mta.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\mta.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         d:\Programme\Microsoft Virtual Studio 2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt io_func.c wave_io.c
+         d:\Programme\Microsoft Virtual Studio 2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt wave_io.c
          wave_io.c
      1>wave_io.c(40): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\Programme\Microsoft Virtual Studio 2010\VC\include\string.h(105) : see declaration of 'strcpy'
      1>wave_io.c(46): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\Programme\Microsoft Virtual Studio 2010\VC\include\string.h(105) : see declaration of 'strcpy'
      1>wave_io.c(101): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>wave_io.c(105): warning C4244: '=' : conversion from 'float' to 'short', possible loss of data
+     1>wave_io.c(108): warning C4244: '=' : conversion from 'float' to 'short', possible loss of data
      1>wave_io.c(21): warning C4101: 'new_wave' : unreferenced local variable
      1>wave_io.c(26): warning C4101: 'prt' : unreferenced local variable
-         io_func.c
-     1>io_func.c(23): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 d:\Programme\Microsoft Virtual Studio 2010\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>io_func.c(60): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 d:\Programme\Microsoft Virtual Studio 2010\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>io_func.c(116): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 d:\Programme\Microsoft Virtual Studio 2010\VC\include\stdio.h(371) : see declaration of 'sprintf'
-         Generating Code...
-     1>c:\users\tim\documents\repositories\mta\wave_io.c(104): warning C4700: uninitialized local variable 'f_wave' used
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\mta.exe.embed.manifest.res" Debug\mta_manifest.rc 
+         All outputs are up-to-date.
        Link:
          d:\Programme\Microsoft Virtual Studio 2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\mta.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tim\Documents\Repositories\mta\Debug\mta.lib" /MACHINE:X86 Debug\mta.exe.embed.manifest.res
          Debug\io_func.obj
@@ -41,4 +32,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.41
+Time Elapsed 00:00:00.34

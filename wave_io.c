@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int	out;
 	const int bit=9;
-	const int db=6;
+	const float db=12.0;
 
 	char in_name[MAX_STR_LNGTH], out_name[MAX_STR_LNGTH];
 	short *wave;
@@ -98,9 +98,12 @@ int main(int argc, char *argv[])
 	
 	// -------------- Ü3 / 3.1 Klirrfaktor -------------------
 
-	a = pow(db/20,10);
+	a = pow(10.0,db/20.0);
+	fprintf(stderr,"%f\n", db);
+	fprintf(stderr,"%f\n",a);
 
 	for(i=0; i <n_wave; i++) {
+		f_wave = wave[i];
 		f_wave *= a;
 		wave[i] = f_wave;
 		if(f_wave > 32767){
@@ -109,6 +112,7 @@ int main(int argc, char *argv[])
 		if(f_wave < -32768){
 			wave[i] = -32768;
 		}
+		//fprintf(stderr, "%i", wave[i]);
 	}
 
 	// -------------- Ü3 / 3.1 Klirrfaktor end ---------------
