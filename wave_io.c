@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	unsigned int freq_in, bits_in;
 	unsigned int n_wave;
 	unsigned int i;
+	unsigned int N;
 	FILE *prt;
 
 	float a, f_wave;
@@ -97,7 +98,7 @@ int main(int argc, char *argv[])
 	// -------------- 3.4 difference signal end --------------
 	
 	// -------------- Ü3 / 3.1 Klirrfaktor -------------------
-
+	/*
 	a = pow(10.0,db/20.0);
 	fprintf(stderr,"%f\n", db);
 	fprintf(stderr,"%f\n",a);
@@ -114,10 +115,35 @@ int main(int argc, char *argv[])
 		}
 		//fprintf(stderr, "%i", wave[i]);
 	}
-
+	*/
 	// -------------- Ü3 / 3.1 Klirrfaktor end ---------------
+
+	// -------------- Ü3 / 3.2 Echo --------------------------
+	/*
+	N = 0.2 * freq_in;
+	new_wave = (short*)malloc(n_wave * sizeof(short));
+	for(i = 0; i < N; i++){
+		new_wave[i] = wave[i];
+	}
+	for(i=N; i<n_wave; i++){
+		new_wave[i] = 0.5*wave[i] + 0.5 * 0.6 * wave[i-N];
+	}
+	*/
+	
+
+	// -------------- Ü3 / 3.2 Echo end ----------------------
+
+	// -------------- Ü3 / 3.3 Einface Filter ----------------
+	new_wave = (short*)malloc(n_wave * sizeof(short));
+	new_wave[0] = wave[0];
+	new_wave[1] = wave[1];
+	for(i=2; i<n_wave; i++){
+		new_wave[i] = 0.5 * wave[i] - 0.45 * wave[i-1];
+	}
+
+
 	if (out)
-		write_wave(wave, n_wave, freq_in, bits_in, out_name, &header);
+		write_wave(new_wave, n_wave, freq_in, bits_in, out_name, &header);
 
 	free(wave);
 

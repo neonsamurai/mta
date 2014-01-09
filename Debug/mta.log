@@ -1,18 +1,19 @@
-﻿Build started 12.12.2013 14:11:15.
+﻿Build started 09.01.2014 14:21:59.
      1>Project "C:\Users\Tim\Documents\Repositories\mta\mta.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\mta.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          d:\Programme\Microsoft Virtual Studio 2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt wave_io.c
          wave_io.c
-     1>wave_io.c(40): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>wave_io.c(41): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\Programme\Microsoft Virtual Studio 2010\VC\include\string.h(105) : see declaration of 'strcpy'
-     1>wave_io.c(46): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>wave_io.c(47): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\Programme\Microsoft Virtual Studio 2010\VC\include\string.h(105) : see declaration of 'strcpy'
-     1>wave_io.c(101): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>wave_io.c(108): warning C4244: '=' : conversion from 'float' to 'short', possible loss of data
-     1>wave_io.c(21): warning C4101: 'new_wave' : unreferenced local variable
-     1>wave_io.c(26): warning C4101: 'prt' : unreferenced local variable
+     1>wave_io.c(141): warning C4244: '=' : conversion from 'double' to 'short', possible loss of data
+     1>wave_io.c(29): warning C4101: 'f_wave' : unreferenced local variable
+     1>wave_io.c(29): warning C4101: 'a' : unreferenced local variable
+     1>wave_io.c(26): warning C4101: 'N' : unreferenced local variable
+     1>wave_io.c(27): warning C4101: 'prt' : unreferenced local variable
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -32,4 +33,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.34
+Time Elapsed 00:00:00.35
